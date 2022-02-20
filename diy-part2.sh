@@ -16,9 +16,9 @@
 # 如果你有编译ipv6的话，‘去掉LAN口使用内置的 IPv6 管理’代码前面也加 # 注释掉
 
 cat >package/base-files/files/etc/networkip <<-EOF
-uci set network.lan.ipaddr='10.10.10.1'                                    # IPv4 地址(openwrt后台地址)
+uci set network.lan.ipaddr='192.168.1.1'                                    # IPv4 地址(openwrt后台地址)
 uci set network.lan.netmask='255.255.255.0'                                 # IPv4 子网掩码
-#uci set network.lan.gateway='10.10.10.1'                                   # IPv4 网关
+#uci set network.lan.gateway='192.168.1.1'                                   # IPv4 网关
 #uci set network.lan.broadcast='10.10.10.255'                               # IPv4 广播
 #uci set network.lan.dns='119.29.29.29 223.5.5.5'                         # DNS(多个DNS要用空格分开)
 #uci set network.lan.delegate='0'                                            # 去掉LAN口使用内置的 IPv6 管理
